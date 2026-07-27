@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audemars Piguet — Haute Horlogerie</title>
 
-    <!-- Google Fonts para Tipografia Elegante -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        /* Variáveis de Design para fácil personalização */
         :root {
             --bg-color: #0f0f11;
             --card-bg: #18181c;
             --accent-gold: #c5a059;
-            --accent-gold-hover: #e5be75;
             --text-primary: #f0f0f0;
             --text-secondary: #a0a0a5;
             --border-color: rgba(197, 160, 89, 0.2);
@@ -40,7 +38,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Hero Header */
         header {
             background: linear-gradient(180deg, rgba(15, 15, 17, 0.9) 0%, rgba(24, 24, 28, 0.95) 100%);
             padding: 70px 20px 40px;
@@ -49,7 +46,6 @@
         }
 
         .subtitle-tag {
-            font-family: var(--font-body);
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 4px;
@@ -63,7 +59,6 @@
             font-size: 32px;
             font-weight: 600;
             color: #ffffff;
-            letter-spacing: 1px;
             margin-bottom: 10px;
         }
 
@@ -74,7 +69,6 @@
             font-weight: 300;
         }
 
-        /* Menu Fixado Moderno */
         nav {
             position: sticky;
             top: 0;
@@ -95,37 +89,18 @@
             letter-spacing: 2px;
             font-weight: 500;
             transition: all 0.3s ease;
-            position: relative;
         }
 
         nav a:hover {
             color: var(--accent-gold);
         }
 
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: -5px;
-            left: 50%;
-            background-color: var(--accent-gold);
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Container Principal */
         .container {
             max-width: 860px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        /* Cards de Artigo */
         article {
             background-color: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -147,7 +122,6 @@
             font-size: 20px;
             margin-bottom: 15px;
             font-weight: 600;
-            letter-spacing: 0.5px;
         }
 
         p {
@@ -157,7 +131,6 @@
             margin-bottom: 20px;
         }
 
-        /* Moldura das Imagens com efeito de zoom */
         .img-wrapper {
             width: 100%;
             max-height: 480px;
@@ -179,7 +152,6 @@
             transform: scale(1.03);
         }
 
-        /* Caixa de Destaque */
         .destaque {
             background-color: rgba(197, 160, 89, 0.08);
             border-left: 3px solid var(--accent-gold);
@@ -192,15 +164,8 @@
             margin-bottom: 0;
             color: var(--text-primary);
             font-style: italic;
-            font-size: 14px;
         }
 
-        .destaque strong {
-            color: var(--accent-gold);
-            font-style: normal;
-        }
-
-        /* Rodapé */
         footer {
             background-color: #08080a;
             color: var(--text-secondary);
@@ -209,23 +174,6 @@
             font-size: 12px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             margin-top: 60px;
-            letter-spacing: 1px;
-        }
-
-        /* Responsividade para Telas Menores */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 10px;
-            }
-
-            article {
-                padding: 20px;
-            }
         }
     </style>
 </head>
@@ -249,7 +197,7 @@
             <h2>1. A Origem no Vale de Joux (1875)</h2>
             <p>A história da Audemars Piguet começou no coração da Suíça, quando os jovens Jules Louis Audemars e Edward Auguste Piguet decidiram unir suas habilidades. Eles começaram a criar mecanismos extremamente complexos à mão, estabelecendo as bases para uma das marcas independentes mais respeitadas do mundo.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 1 AP.jpg" alt="Sede e museu da Audemars Piguet no Vale de Joux">
+                <img class="img-post" src="imagen-1.jpg" alt="Sede e museu da Audemars Piguet no Vale de Joux">
             </div>
         </article>
 
@@ -257,7 +205,7 @@
             <h2>2. O Nascimento do Royal Oak (1972)</h2>
             <p>Em 1972, a marca quebrou todas as regras ao lançar o Royal Oak. Desenhado pelo lendário Gérald Genta, foi o primeiro relógio esportivo de luxo feito de aço inoxidável, custando mais do que muitos relógios de ouro da época. Seu aro octogonal com parafusos aparentes virou um ícone instantâneo.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 2 AP.jpg" alt="Relógio Audemars Piguet Royal Oak Clássico">
+                <img class="img-post" src="imagen-2.jpg" alt="Relógio Audemars Piguet Royal Oak Clássico">
             </div>
         </article>
 
@@ -265,7 +213,7 @@
             <h2>3. O Design "Tapisserie" do Mostrador</h2>
             <p>Uma das características mais marcantes do Royal Oak é o padrão do seu mostrador, conhecido como "Tapisserie". Esse efeito quadriculado em alto-relevo é feito através de uma máquina antiga de gravação artesanal, criando um jogo de luz único que muda dependendo do ângulo em que você olha.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 3 AP.jpg" alt="Detalhe do movimento e acabamento do Royal Oak">
+                <img class="img-post" src="imagen-3.jpg" alt="Detalhe do movimento e acabamento do Royal Oak">
             </div>
         </article>
 
@@ -273,7 +221,7 @@
             <h2>4. Royal Oak Offshore: A Evolução Robusta</h2>
             <p>Lançado em 1993, o Offshore foi uma versão maior, mais imponente e esportiva do clássico original. Pensado para uma geração mais jovem e ousada, ele trouxe novos materiais e um visual mais robusto, ajudando a consolidar a marca na era moderna.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 4 AP.jpg" alt="Audemars Piguet Royal Oak Offshore Cronógrafo">
+                <img class="img-post" src="imagen-4.jpg" alt="Audemars Piguet Royal Oak Offshore Cronógrafo">
             </div>
         </article>
 
@@ -281,7 +229,7 @@
             <h2>5. Grandes Complicações Mecânicas</h2>
             <p>Na alta relojoaria, "complicação" é qualquer função além de marcar as horas e minutos. A Audemars Piguet é mestre em engenharia mecânica, criando engrenagens fantásticas como o Calendário Perpétuo (que ajusta os dias do mês e anos bissextos sozinho) e o complexo mecanismo de Tourbillon.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 5 AP.jpg" alt="Audemars Piguet Calendário Perpétuo Esqueletizado">
+                <img class="img-post" src="imagen-5.jpg" alt="Audemars Piguet Calendário Perpétuo Esqueletizado">
             </div>
         </article>
 
@@ -289,7 +237,7 @@
             <h2>6. Materiais do Futuro e Alta Tecnologia</h2>
             <p>Além do aço e do ouro tradicional, a marca investe pesado em inovação de materiais. Eles utilizam elementos ultra-resistentes em suas caixas, como a cerâmica colorida (que é praticamente impossível de riscar), o titânio e o carbono forjado.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 6 AP.jpg" alt="Audemars Piguet feito em Cerâmica Negra">
+                <img class="img-post" src="imagen-6.jpg" alt="Audemars Piguet feito em Cerâmica Negra">
             </div>
         </article>
 
@@ -297,7 +245,7 @@
             <h2>7. Cultura Pop, Hip-Hop e Parcerias de Peso</h2>
             <p>A Audemars Piguet conseguiu sair do nicho tradicional de colecionadores e virou um grande símbolo de status na cultura pop. Ela é frequentemente citada em músicas de hip-hop e possui edições limitadas feitas em parceria com astros da música, dos esportes e até colaborações com a Marvel (como os modelos do Pantera Negra e Homem-Aranha).</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 7 AP.jpg" alt="Edição Limitada Audemars Piguet Marvel Homem-Aranha">
+                <img class="img-post" src="imagen-7.jpg" alt="Edição Limitada Audemars Piguet Marvel Homem-Aranha">
             </div>
         </article>
 
@@ -305,7 +253,7 @@
             <h2>8. O Mercado da Escassez e Exclusividade</h2>
             <p>Não basta apenas ter o dinheiro para comprar um Audemars Piguet direto na loja. A marca produz uma quantidade restrita de peças por ano para manter a máxima exclusividade. Isso faz com que as listas de espera sejam longas e os relógios valorizem muito no mercado de revenda.</p>
             <div class="img-wrapper">
-                <img class="img-post" src="imagen 8 AP.jpg" alt="Fachada de uma Boutique Audemars Piguet">
+                <img class="img-post" src="imagen-8.jpg" alt="Fachada de uma Boutique Audemars Piguet">
             </div>
             
             <div class="destaque">
